@@ -1,0 +1,80 @@
+smartcard_wrap.c
+
+[ Module : smartcard, Package : smartcard ]
+
+
+serial_init(device);
+        [ returns int  ]
+
+serial_deinit(fd);
+        [ returns int  ]
+
+alpar_recv(fd,ack,command,data,lrc);
+        [ returns short  ]
+
+alpar_send(fd,command,length,data);
+        [ returns int  ]
+
+send_num_mask(fd,REFERENCE);
+        [ returns int  ]
+
+idle_mode_high(fd);
+        [ returns int  ]
+
+idle_mode_low(fd);
+        [ returns int  ]
+
+power_down_mode(fd);
+        [ returns int  ]
+
+power_off(fd);
+        [ returns int  ]
+
+power_up_iso(fd,REFERENCE);
+        [ returns int  ]
+
+power_up_3V(fd,REFERENCE);
+        [ returns int  ]
+
+power_up_5V(fd,REFERENCE);
+        [ returns int  ]
+
+card_command(fd,iso_cmd,cmd_len,REFERENCE);
+        [ returns int  ]
+
+apdu_send(fd,cla,ins,p1,p2,p3,datalen,data);
+        [ returns int  ]
+
+apdu_recv(fd,OUTPUT,OUTPUT,REFERENCE);
+        [ returns int  ]
+
+select_file(fd,fident);
+        [ returns int  ]
+
+read_binary(fd,offset,read_buf_length,REFERENCE);
+        [ returns int  ]
+
+write_binary(fd,offset,write_buf_length,REFERENCE);
+        [ returns int  ]
+
+update_binary(fd,offset,write_buf_length,REFERENCE);
+        [ returns int  ]
+
+erase_binary(fd);
+        [ returns int  ]
+
+verify_PIN(fd,REFERENCE);
+        [ returns int  ]
+
+delete_file(fd,fident);
+        [ returns int  ]
+
+invalidate(fd);
+        [ returns int  ]
+
+rehabilitate(fd);
+        [ returns int  ]
+
+create_file_tpef(fd,fident,size,ac1,ac2,kn1,kn2);
+        [ returns int  ]
+

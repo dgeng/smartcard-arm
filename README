@@ -1,0 +1,22 @@
+Smartcard driver
+----------------
+
+This is a release of Smartcard driver, designed and implemented by
+Vivek K S (ksvivek@csa.iisc.ernet.in). Dept. of CSA, Indian Institue
+of Science,  Bangalore
+
+Smartcard Driver for the simputer is a driver for the Philips TDA8008
+smartcard controller. It uses the ALPAR protocol to communicate
+with the controller. The controller supports ISO7816-4 complaint cards
+following the T=0 and T=1 protocol.
+
+The Smartcard driver for the x86, is meant for the Philips TDA8008
+development board. It uses the serial port to communicate with the
+development board. In the case of the arm platform, the driver uses
+a kernel module to communicate with the controller. This is because
+a polling serial driver is used rather than the default interrupt-mode
+serial driver in Linux. Currently, the smartcards that have been tested
+include BULL-CP8, Schlumberger Payflex and Philips DS Personalization
+cards. Use alpar_test to check communication with the controller.
+
+Smartcard driver is distributed under the GNU General Public License.

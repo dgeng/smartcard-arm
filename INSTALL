@@ -1,0 +1,17 @@
+PRE-REQUISTES
+-------------
+
+ * Philips TDA8008 development board for x86 platform
+ * The simputer board for the arm platform
+ * ISO7816-4 complaint smartcards following T=0 or T=1 protocol
+ * Perl 5.5 or above for the Perl wrapper
+
+COMPILING
+---------
+
+This distribution has currently been tested only on Linux/x86 and Linux/arm
+based machines. There are 2 distributions provided: one for the arm and one
+for x86.  Please go through the variables set in the makefiles, and change
+them to point to the correct paths on your machine. Make sure that you have 
+all the pre-requisites. Also you require to have SWIG installed for compiling
+and the compilers/cross-compilers as well.
