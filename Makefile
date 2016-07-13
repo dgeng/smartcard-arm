@@ -31,4 +31,4 @@ readflex: readflex.o
 	$(CC) -c $(CFLAGS) -fpic -o $@ $<
 
 clean:
-	rm *.o *.doc *wrap.c *.so
+	rm -f *.o *.doc *wrap.c *.so
